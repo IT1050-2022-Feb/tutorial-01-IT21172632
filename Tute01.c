@@ -6,19 +6,13 @@
 
 int main() {
     int i;
-    float mark, sum=0, avg;
+    float sub1,sub2, sum=0, avg;
     printf("Enter the marks of first subject: ");
+    scanf("%f",&sub1);
     printf("Enter the marks of second subject: ");
-    for(i=0; i<5; i++)
-    {
-        scanf("%f", &mark);
-        sum = sum+mark;
-    }
-    avg = sum/5;
-    printf("\nAverage Mark = %0.2f", avg);
-    getch();
-    
-  
+    scanf("%f",&sub2);
+    avg = (sub1+sub2)/2;
+    printf("Average Mark = %0.2f", avg);
   return 0;
 }
 
